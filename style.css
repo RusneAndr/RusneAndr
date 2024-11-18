@@ -1,25 +1,22 @@
-/* Bendrai nustatome visos svetainės šriftus ir pagrindinį stilių */
 body {
-    font-family: 'Roboto', sans-serif; /* Google Fonts pvz. */
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    color: #333; /* Teksto spalva */
-    box-sizing: border-box; /* Box model */
+    color: #333;
+    box-sizing: border-box;
 }
 
-/* Sekcijų pavadinimų (h2) šriftai */
 h2 {
-    font-family: 'Merriweather', serif; /* Šriftų derinys */
+    font-family: 'Merriweather', serif;
     font-size: 2.5rem;
-    font-weight: 700; /* Storesnis šriftas */
+    font-weight: 700;
     text-align: center;
     color: #0056b3;
     margin-bottom: 1rem;
 }
 
-/* Papildomų antraščių (h3, h4) stilius */
 h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 1.8rem;
@@ -33,14 +30,12 @@ h4 {
     color: #4caf50;
 }
 
-/* Paragrafo stilius */
 p {
     font-size: 1rem;
     margin: 0.5rem 0;
     color: #444;
 }
 
-/* Sąrašo stilius */
 ul {
     list-style-type: disc;
     padding-left: 1.5rem;
@@ -52,7 +47,6 @@ ul li {
     font-size: 1rem;
 }
 
-/* Nuotraukų stilius */
 img {
     display: block;
     margin: 1rem auto;
@@ -60,14 +54,6 @@ img {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Video ir audio sekcijų centrinimas */
-video, iframe, audio {
-    display: block;
-    margin: 1rem auto;
-    max-width: 100%;
-}
-
-/* Flexbox stiliai sekcijoms */
 section {
     padding: 2rem;
     margin: 2rem 0;
@@ -80,7 +66,6 @@ section {
     justify-content: center;
 }
 
-/* Grid išdėstymo stilius "Atlikti darbai" sekcijoje */
 #portfolio img {
     width: 100%;
     max-width: 300px;
