@@ -2,20 +2,55 @@
 <html lang="lt">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Rusnė Andrulevičiūtė">
     <title>Rusnė Andrulevičiūtė - Asmeninė Svetainė</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
     
 </head>
-<body>
+<body class="light-mode">
     <!--Rusnė Andrulevičiūtė, EDIf-23/2-->
+
+    <header class="navbar">
+        <div class="container">
+            <nav>
+                <span class="menu-toggle">☰</span> <!-- Hamburger meniu -->
+                <ul>
+                    <li><a href="#about">Apie mane</a></li>
+                    <li><a href="#resume">CV</a></li>
+                    <li><a href="#portfolio">Atlikti darbai</a></li>
+                    <li><a href="#services">Paslaugos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Personal Section -->
+    <section id="personal" class="personal">
+        <div class="overlay">
+            <div class="hero-content">
+                <h1>Rusnė Andrulevičiūtė</h1>
+                <p class="profession">Informatikos Inžinierė</p>
+            </div>
+        </div>
+    </section>
+        
+    <!-- Contact Information -->
+    <section class="contact-info">
+        <div class="container">
+            <p><strong>Telefono nr.:</strong> +37064680240</p>
+            <p><strong>Email:</strong> rus.andruleviciute@gmail.com</p>
+            <p><strong>Lokacija:</strong> Vilnius, Lietuva</p>
+        </div>
+    </section>
+    
 
     <section id='about'>
         <h2>Apie mane</h2>
         <p>Aš esu Rusnė Andrulevičiūtė, šiuo metu studijuojų VILNIUS TECH universitete, Informatikos inžinerijos skrityje. Mano studijų kryptis yra dirbtinio intelekto sistemos.
         </p>
-        <img src="Photos/Rusne_Andru.jpg"  width="800" height="533" />
+        <!-- <img src="Photos/Rusne_Andru.jpg"  width="800" height="533" /> -->
         <h3>Informatikos inžinierė </h3>
         <p>Laisvalaikiui mėgstu fotogrfuoti, filmuoti ir sportuoti. Kūrybiška veikla tai mano būdas atsiriboti ir atsipalaiduoti nuo sunkių darbų. Manau, kad meno supratimas praplėčia mūsų žinias ir padeda spresti sunkias užduotis, į jas pažiūrint kūribingai.</p>
         <ul>
@@ -75,10 +110,11 @@
 
     <section id="portfolio">
         <h2>Atlikti darbai</h2>
-        <p>APRAŠYMAS</p> <br>
-        <img src="Photos/1.jpg"  width="300" height="200" />
-        <img src="Photos/2.jpg"  width="300" height="200" />
-        <img src="Photos/3.jpg"  width="300" height="200" />
+        <div class="portfolio-grid">
+            <img src="Photos/1.jpg" alt="Darbas 1">
+            <img src="Photos/2.jpg" alt="Darbas 2">
+            <img src="Photos/3.jpg" alt="Darbas 3">
+        </div>
     </section>
 
     <section id="services">
@@ -94,6 +130,12 @@
             <source src="Video/mp3.mp3" type="audio/mpeg">
         </audio>
     </section>
+
+    <body class="light-mode">
+        <button class="toggle-btn" onclick="toggleMode()">Switch to Dark Mode</button>
+    
+        <script src="script.js"></script> <!-- Link to the JavaScript file -->
+    </body>
 
 </body>
 
