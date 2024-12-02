@@ -30,3 +30,23 @@ setInterval(updateClock, 1000);
 // Inicialiai iškviečiame funkciją, kad laikrodis pasirodytų iškart
 updateClock();
 
+// Stebime slinkimo įvykius
+window.addEventListener('scroll', function() {
+    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+    // Jei slinkta daugiau nei 300px, rodome mygtuką
+    if (window.scrollY > 300) {
+        scrollToTopBtn.classList.add('show');
+    } else {
+        scrollToTopBtn.classList.remove('show');
+    }
+});
+
+// Funkcija, sklandžiai grįžtanti į puslapio pradžią
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
+

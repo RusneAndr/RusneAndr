@@ -309,3 +309,34 @@ body.dark-mode {
     transform: scale(1.2); /* Paryškintas efektas */
 }
 
+
+/* Scroll-to-Top mygtuko stilius */
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Mygtukas paspaudimo metu */
+#scrollToTopBtn:active {
+    transform: scale(0.9);
+}
+
+/* Mygtukas matomas */
+#scrollToTopBtn.show {
+    opacity: 1;
+    visibility: visible;
+}
+
