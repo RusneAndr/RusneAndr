@@ -272,3 +272,18 @@ body.dark-mode {
     overflow: hidden;
 }
 
+#clock-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#clock {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    padding: 10px;
+    border: 2px solid #ccc;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
