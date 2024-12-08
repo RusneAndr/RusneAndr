@@ -340,3 +340,109 @@ body.dark-mode {
     visibility: visible;
 }
 
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 50px; /* Daugiau tarpo apačioje */
+    background-color: #f9f9f9;
+}
+
+.form-container h1 {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.form-container form {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #45a049;
+}
+
+/* Rezultatų konteineris */
+#results {
+    margin-top: 30px; /* Užtikrina tarpą viršuje */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Rezultatų antraštė */
+#results h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #00695c;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Rezultatų duomenys */
+#results p {
+    margin: 0.5rem 0;
+}
+
+/* Rezultato apibendrinimas (vardas, pavardė ir vidurkis) */
+#results p strong {
+    color: #0056b3;
+}
+
+/* Sukoncentruotas tekstas */
+#results .summary {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4caf50;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Vidurkio tekstui pridėti daugiau efekto */
+#results p[style*="color: red"] {
+    font-weight: bold;
+}
+
+#results p[style*="color: orange"] {
+    font-style: italic;
+}
+
+#results p[style*="color: green"] {
+    text-decoration: underline;
+}
